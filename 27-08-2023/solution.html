@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="top-half">
+      <div class="stick-top"></div>
+    </div>
+    <div class="bottom-half">
+      <div class="stick-bottom"></div>
+    </div>
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        background: #998235;
+      }
+      div.top-half {
+        display: flex;
+        justify-content: center;
+        width: 160px;
+        height: 80px;
+        border-radius: 160px 160px 0 0;
+        background: #0b2429;
+      }
+      .stick-top {
+        width: 40px;
+        height: 115px;
+        align-self: end;
+        background: #0b2429;
+      }
+      div.bottom-half {
+        display: flex;
+        justify-content: center;
+        width: 160px;
+        height: 80px;
+        border-radius: 150px 150px 0 0;
+        background: #0b2429;
+        transform: rotate(180deg);
+      }
+      .stick-bottom {
+        width: 40px;
+        height: 115px;
+        align-self: end;
+        background: #0b2429;
+      }
+    </style>
+  </body>
+</html>

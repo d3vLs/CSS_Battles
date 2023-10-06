@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Battle 30-08-2023</title>
+  </head>
+  <body>
+    <div class="square">
+      <div class="line"></div>
+    </div>
+    <div class="square rotate">
+      <div class="line"></div>
+    </div>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 89px;
+        background-color: #f0cd48;
+      }
+      .square {
+        display: flex;
+        justify-content: end;
+        width: 100px;
+        height: 80px;
+        background: #66284a;
+      }
+      div.line {
+        width: 20px;
+        height: 240px;
+        background-color: #66284a;
+      }
+      .rotate {
+        transform: rotateY(180deg);
+      }
+    </style>
+  </body>
+</html>

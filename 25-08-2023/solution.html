@@ -1,0 +1,89 @@
+<html>
+  <body>
+    <div id="small-circle1"></div>
+    <div id="small-circle2"></div>
+    <div id="small-circle3"></div>
+    <div id="small-circle4"></div>
+    <div id="outer-circle"></div>
+    <div id="inner-circle"></div>
+
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: grid;
+        gap: 6rem;
+        width: 400px;
+        height: 300px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        background: #62306d;
+        position: relative;
+      }
+      div#small-circle1 {
+        position: absolute;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        left: 5px;
+        top: 40px;
+        width: 60px;
+        height: 60px;
+        background: #f7ec7d;
+        border-radius: 30px;
+      }
+      div#small-circle2 {
+        position: absolute;
+        grid-column: 2/3;
+        grid-row: 3/4;
+        left: 5px;
+        bottom: 40px;
+        width: 60px;
+        height: 60px;
+        background: #f7ec7d;
+        border-radius: 30px;
+      }
+      div#small-circle3 {
+        position: absolute;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        left: 90px;
+        top: 120px;
+        width: 60px;
+        height: 60px;
+        background: #f7ec7d;
+        border-radius: 30px;
+      }
+      div#small-circle4 {
+        position: absolute;
+        grid-column: 3/4;
+        grid-row: 1/2;
+        right: 90px;
+        top: 120px;
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        background: #f7ec7d;
+      }
+      div#outer-circle {
+        position: absolute;
+        place-self: center;
+        width: 160px;
+        height: 160px;
+        background: #62306d;
+        border-radius: 80px;
+      }
+      div#inner-circle {
+        position: absolute;
+        place-self: center;
+        width: 120px;
+        height: 120px;
+        background: #f7ec7d;
+        border-radius: 61px;
+      }
+    </style>
+  </body>
+</html>

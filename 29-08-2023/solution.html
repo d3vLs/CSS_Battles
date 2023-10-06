@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Battles</title>
+  </head>
+  <body>
+    <div style="display: flex; gap: 40px">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="line"></div>
+    </div>
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        display: flex;
+        gap: 40px;
+        width: 400px;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+        background-color: #d669ec;
+      }
+      .circle {
+        width: 100px;
+        aspect-ratio: 1;
+        background-color: #d669ec;
+        border-radius: 50%;
+        border: 20px solid #fdfbf8;
+      }
+      .line {
+        top: 200px;
+        left: 115px;
+        width: 170px;
+        height: 20px;
+        background-color: #fdfbf8;
+        position: absolute;
+      }
+    </style>
+  </body>
+</html>
