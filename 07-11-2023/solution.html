@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>07-11-2023</title>
+  </head>
+  <body>
+    <div class="t"></div>
+    <div id="s"></div>
+    <div class="t t1"></div>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+        gap: 25px;
+        background: #9b3e41;
+      }
+      #s {
+        width: 121px;
+        height: 121px;
+        rotate: 45deg;
+        background: #fffef2;
+      }
+      .t {
+        width: 0px;
+        height: 0px;
+        /* rotate:45deg; */
+        border-top: 86px solid transparent;
+        border-right: 86px solid #ffdc57;
+        border-bottom: 86px solid transparent;
+      }
+      .t1 {
+        rotate: 180deg;
+      }
+    </style>
+  </body>
+</html>
