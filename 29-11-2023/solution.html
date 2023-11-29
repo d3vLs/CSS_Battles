@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>29/11/2023</title>
+  </head>
+  <body>
+    <div class="c"></div>
+    <div class="c c1"></div>
+    <div class="s"></div>
+    <div class="s s1"></div>
+    <style>
+      body {
+        width: 400px;
+        height: 300px;
+        display: grid;
+        place-content: center;
+        background: #004416;
+      }
+      .c {
+        width: 230px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: #8fcea5;
+      }
+      .c1 {
+        position: absolute;
+        place-self: center;
+        width: 170px;
+        background: #004416;
+      }
+      .s {
+        top: 24px;
+        /* left:60; */
+        width: 132px;
+        aspect-ratio: 1;
+        background: #8fcea5;
+        position: absolute;
+        place-self: center;
+        rotate: 45deg;
+      }
+      .s1 {
+        top: -2px;
+        width: 118px;
+        background: #004416;
+      }
+    </style>
+  </body>
+</html>
